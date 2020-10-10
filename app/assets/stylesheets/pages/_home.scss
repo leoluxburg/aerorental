@@ -1,5 +1,30 @@
 // Specific CSS for your home-page
 .banner {
+  color: #25373e;;
+  text-align: center;
+  height: 100vh;
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  background-attachment: fixed;
+
+}
+
+ul {
+  padding-left: 0px !important;
+}
+ul#menu li {
+  display:inline !important;
+  padding-left: 0px !important;
+}
+.banner img{
+   width: 100%;
+  height: auto;
+}
+// Specific CSS for your home-page
+.banner2 {
   color: white;
   text-align: center;
   height: 100vh;
@@ -9,9 +34,39 @@
   justify-content: center;
   position:relative;
   background-attachment: fixed;
+  background-position: bottom;
+
 }
 
-.banner img{
+.banner2 img{
    width: 100%;
   height: auto;
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border-width: 3px;
+  border-color: #25373e;
+  border-style: solid;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.btn-aero {
+  background-color: #25373e;
+  color: white;
+}
+
+.btn-white {
+  background-color: white;
+  color: #25373e !important;
 }
