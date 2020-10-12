@@ -6,4 +6,17 @@ class PagesController < ApplicationController
 
   def demo
   end
+
+  def destinos
+  end
+
+  def contacto
+  end
+
+  def nosotros
+  end
+
+  def aviones
+  end
+
 end
