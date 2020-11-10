@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get '/demo', to: 'pages#demo'
   get '/contacto', to: 'pages#contacto'
-  get '/aviones', to: 'pages#aviones'
+  get '/naves', to: 'pages#aviones'
   get '/nosotros', to: 'pages#nosotros'
   get '/destinos', to: 'pages#destinos'
 

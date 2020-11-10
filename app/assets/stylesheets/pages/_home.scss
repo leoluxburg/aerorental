@@ -27,18 +27,23 @@ ul#menu li {
    width: 100%;
   height: auto;
 }
+
+.logo-banner img{
+  max-height: 200px;
+  max-width: 200px;
+}
 // Specific CSS for your home-page
 .banner2 {
   color: white;
   text-align: center;
-  height: 50vh;
+  height: 60vh;
   background-size: cover !important;
   display: flex;
   align-items: center;
   justify-content: center;
   position:relative;
   background-attachment: fixed;
-  background-position: bottom;
+
 
 }
 

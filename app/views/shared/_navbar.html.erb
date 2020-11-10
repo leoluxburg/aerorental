@@ -8,19 +8,19 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <%= link_to "Home", "#", class: "nav-link" %>
+          <%= link_to "Home", "/", class: "nav-link" %>
         </li>
         <li class="nav-item">
-          <%= link_to "Nosotros", "#", class: "nav-link"  %>
+          <%= link_to "Nosotros", "/nosotros", class: "nav-link"  %>
         </li>
         <li class="nav-item">
-          <%= link_to "Destinos", "#", class: "nav-link"  %>
+          <%= link_to "Destinos", "/destinos", class: "nav-link"  %>
         </li>
         <li class="nav-item">
-          <%= link_to "Aviones", "#", class: "nav-link"  %>
+          <%= link_to "Aviones", "/naves", class: "nav-link"  %>
         </li>
         <li class="nav-item">
-          <%= link_to "Contacto", "#", class: "nav-link"  %>
+          <%= link_to "Contacto", "/contacto", class: "nav-link"  %>
         </li>
          <% if user_signed_in? %>
       <%= link_to "Dashboard", "/landofooo", class: "dropdown-item" %>
