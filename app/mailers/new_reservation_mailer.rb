@@ -3,7 +3,7 @@ class NewReservationMailer < ApplicationMailer
   def reservation(reservation)
 
     @reservation = reservation
-    mail(to: 'info@flyaerorental.com', subject: 'Nueva Reserva' )
+    mail(to: 'leonardoluxburg@gmail.com', subject: 'Nueva Reserva' )
 
   end
 
