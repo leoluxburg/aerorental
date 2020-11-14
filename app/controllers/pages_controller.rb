@@ -8,12 +8,14 @@ class PagesController < ApplicationController
   end
 
   def destinos
+    @destinos = Destination.all
   end
 
   def contacto
   end
 
   def nosotros
+
   end
 
   def aviones

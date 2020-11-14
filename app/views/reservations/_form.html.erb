@@ -4,15 +4,14 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :email %>
-    <%= f.input :phone %>
-    <%= f.input :from, :collection => %w[Albrook Bocas\ Del\ Toro Changuinola David Howards Jaque La\ Palma Panama\ City Rio\ Hato Santiago   ] %>
-    <%= f.input :to, :collection => %w[Albrook Bocas\ Del\ Toro Changuinola David Howards Jaque La\ Palma Panama\ City Rio\ Hato Santiago   ] %>
-    <%= f.input :date %>
-    <%= f.input :time %>
-    <%= f.input :adults %>
-    <%= f.input :children %>
+    <%= f.input :name, :label => "Nombre" %>
+    <%= f.input :email, :label => "Correo" %>
+    <%= f.input :phone, :label => "Celular" %>
+    <%= f.input :from, :label => "Desde", collection: @destinations %>
+    <%= f.input :to, :label => "Hacia", collection: @destinations %>
+    <%= f.input :date, :label => "Fecha" %>
+    <%= f.input :time, :label => "Hora" %>
+    <%= f.input :adults, :label => "Pasajeros", collection: 1..5 %>
     <%= f.input :message %>
   </div>
 

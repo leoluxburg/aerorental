@@ -1,9 +1,9 @@
 <div class="banner2" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../assets/destinos.jpeg);  background-position: center;">
   <div class="container">
-  <h1 style="padding-top: 70px; font-family: 'Bebas Neue', cursive; font-size: 4em;">Destinos</h1>
-  <hr style="background-color: white;">
-  <p>Fly AeroRental ofrece vuelos chárter con un servicio altamente personalizado a mas de 30 destinos en el territorio nacionalpara hacer de sus vuelos de negocios, de aventura y de descanso una realidad.</p>
-  <div class="text-center"><a href="/reservations/new"><p class="btn btn-aero" style="font-size: 20px;">Reserva un Vuelo</p> </a></div>
+    <h1 style="padding-top: 70px; font-family: 'Bebas Neue', cursive; font-size: 4em;">Destinos</h1>
+    <hr style="background-color: white;">
+    <p>Fly AeroRental ofrece vuelos chárter con un servicio altamente personalizado a mas de 30 destinos en el territorio nacional para hacer de sus vuelos de negocios, de aventura y de descanso una realidad.</p>
+    <div class="text-center"><a href="/reservations/new"><p class="btn btn-aero" style="font-size: 20px;">Reserva un Vuelo</p> </a></div>
   </div>
 </div>
 <br>
@@ -22,83 +22,20 @@
     </thead>
     <tbody>
       <tr>
-        <td>Bocas Del Toro</td>
-        <td>Bocas Del Toro</td>
-        <td>MPBO</td>
-      </tr>
-      <tr>
-        <td>Changuinola</td>
-        <td>Cap Manuel Nino International</td>
-        <td>MPCH</td>
-      </tr>
-      <tr>
-        <td>David</td>
-        <td>Enrique Malek International</td>
-        <td>MPDA</td>
-      </tr>
-      <tr>
-        <td>Howards</td>
-        <td>Howard Afb</td>
-        <td>MPHO</td>
-      </tr>
-      <tr>
-        <td>Jaque</td>
-        <td>Jaque</td>
-        <td>MPHO</td>
-      </tr>
-      <tr>
-        <td>La Palma</td>
-        <td>Cap Ramon Xatruch</td>
-        <td>MPLP</td>
-      </tr>
-      <tr>
-        <td>Panama</td>
+        <td>Albrook</td>
         <td>Marcos A Gelabert International </td>
         <td>MPMG</td>
       </tr>
+      <% @destinos.each do |destination| %>
       <tr>
-        <td>Panama City</td>
-        <td>Tocumen International</td>
-        <td>MPTO</td>
+        <td><%= destination.name %></td>
+        <td><%= destination.airport %></td>
+        <td><%= destination.code %></td>
       </tr>
-      <tr>
-        <td>Rio Hato</td>
-        <td>Scarlett Martinez International</td>
-        <td>MPSM</td>
-      </tr>
-      <tr>
-        <td>Santiago</td>
-        <td>Ruben Cantu</td>
-        <td>MPSA</td>
-      </tr>
+      <% end %>
     </tbody>
   </table>
 </div>
 <br>
 <br>
-<div style="background-color: #25373e;" style="">
-  <br>
-  <br>
-  <div class="container text-center" style="margin-top: 0px;">
-    <hr style="background-color:white; ">
-    <br>
-    <div class="img-foorter">
-    <%= image_tag("imageedit_6_4185851809.png")%>
-    </div>
-    <br>
-    <p style="color: white;">contacto@flyaerorental.com</p>
-    <br>
-    <div class="row">
-      <div class="col-sm-4 text-center"><h1 style="color: white;"><i class="fab fa-instagram"></i></h1></div>
-      <div class="col-sm-4 text-center"><h1 style="color: white;"><i class="fab fa-facebook-f"></i></h1></div>
-      <div class="col-sm-4 text-center"><h1 style="color: white;"><i class="fab fa-twitter"></i></h1></div>
-    </div>
-    <br>
-    <p style="color: white;"><i class="fas fa-phone"></i> 420-6969 / <i class="fas fa-mobile-alt"></i> 6280-0856</p>
-    <br>
-    <p style="color: white;">Home / Nosotros / Destinos / Aviones / Contacto</p>
-    <br>
-    <hr style="background-color:white; ">
-  </div>
-  <br>
-</div>
+
