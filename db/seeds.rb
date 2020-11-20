@@ -13,12 +13,12 @@ destination_attributes = [
   {
     name: "Bocas del Toro",
     airport: "Bocas del Toro International",
-    code: "BOC - MPBO",
+    code: "MPBO-BOC",
   },
   {
     name: "Changinola",
     airport: "Changinola International",
-    code: "CHX - MPCH",
+    code: "MPCH-CHX",
   },
   {
     name: "Rambala",
@@ -33,12 +33,12 @@ destination_attributes = [
   {
     name: "David",
     airport: "Enrique Malek",
-    code: "DAV - MPDA",
+    code: "MPDA-DAV",
   },
   {
     name: "Santiago",
     airport: "Rubén Cantú",
-    code: "STG - MPSA",
+    code: "MPSA-SYP",
   },
   {
     name: "Isla Coiba",
@@ -58,17 +58,17 @@ destination_attributes = [
   {
     name: "Penonome",
     airport: "Guillermo Palm Jaén",
-    code: "PJE - MPJE",
+    code: "MPJE-PJE",
   },
   {
     name: "Rio hato",
     airport: "Scarlet Martinez International",
-    code: "RIH - MPSM",
+    code: "MPSM-RIH",
   },
   {
     name: "Chitre",
     airport: "Alonso Valderrama",
-    code: "CDT - MPCE",
+    code: "MPCE-CDT",
   },
   {
     name: "Guarare",
@@ -78,7 +78,7 @@ destination_attributes = [
   {
     name: "Pedasi",
     airport: "Justiniano Montenegro",
-    code: "PDM - MPPD",
+    code: "MPPD-PDM",
   },
   {
     name: "Chame",
@@ -88,12 +88,12 @@ destination_attributes = [
   {
     name: "Panama Pacifico",
     airport: "Panama Pacifico International",
-    code: "BLB - MPPA",
+    code: "MPPA-BLB",
   },
   {
     name: "Contadora",
     airport: "Raul Arias",
-    code: "OTD - MPRA",
+    code: "MPRA-OTD",
   },
   {
     name: "Isla Pedro Gonzalez",
@@ -103,7 +103,7 @@ destination_attributes = [
   {
     name: "Isla San Miguel",
     airport: "San Miguel",
-    code: "NMG - MPMI",
+    code: "MPMI-NMG",
   },
   {
     name: "Isla San Jose",
@@ -113,17 +113,17 @@ destination_attributes = [
   {
     name: "Punta coco",
     airport: "Punta cocos",
-    code: "SIC",
+    code: "PCO",
   },
   {
     name: "Panama City",
     airport: "Tocumen International",
-    code: "TUM - MPTO",
+    code: "MPTO-TUM",
   },
   {
     name: "Garachine",
     airport: "Garachine",
-    code: "GHE- MPGA",
+    code: "MPGA-GHE",
   },
   {
     name: "Bahia Piñas",
@@ -133,7 +133,7 @@ destination_attributes = [
   {
     name: "Jaque",
     airport: "Jaque",
-    code: "JQE - MPJE",
+    code: "MPJE-JQE",
   },
   {
     name: "Sambú",
@@ -143,7 +143,7 @@ destination_attributes = [
   {
     name: "Puerto Obaldia",
     airport: "Puerto Obaldia",
-    code: "PUE - MPOA",
+    code: "MPOA-PUE",
   },
   {
     name: "Isla Achutupo",
@@ -158,7 +158,7 @@ destination_attributes = [
   {
     name: "Porvenir",
     airport: "Porvenir",
-    code: "PVE- MPVR",
+    code: "MPVR-PVE",
   },
   {
     name: "Corazon de Jesus",
@@ -168,8 +168,30 @@ destination_attributes = [
   {
     name: "Colón",
     airport: "Enrique Jimenez",
-    code: "ONX- MPEJ",
+    code: "MPEJ-ONX",
+  },
+  {
+    name: "Ustupo",
+    airport: "Ustupo/Ogobsucum",
+    code: "OGM",
+  },
+  {
+    name: "Mulatupo",
+    airport: "Mulatupo",
+    code: "MPP",
+  },
+  {
+    name: "La palma",
+    airport: "Miraflores",
+    code: "MPMF",
+  },
+  {
+    name: "Albrook",
+    airport: "Marcos A Gelabert International ",
+    code: "MPMG",
   },
 
 ]
+
+puts 'DB populated'
 Destination.create!(destination_attributes)

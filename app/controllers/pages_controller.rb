@@ -8,7 +8,7 @@ class PagesController < ApplicationController
   end
 
   def destinos
-    @destinos = Destination.all
+    @destinos = Destination.all.sort_by &:name
   end
 
   def contacto

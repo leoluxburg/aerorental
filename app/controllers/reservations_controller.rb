@@ -16,7 +16,7 @@ class ReservationsController < ApplicationController
   # GET /reservations/new
   def new
     @reservation = Reservation.new
-    @destinations = Destination.all
+    @destinations = Destination.all.sort_by &:name
   end
 
   # GET /reservations/1/edit

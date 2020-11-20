@@ -11,8 +11,8 @@
     <%= f.input :to, :label => "Hacia", collection: @destinations %>
     <%= f.input :date, :label => "Fecha" %>
     <%= f.input :time, :label => "Hora" %>
-    <%= f.input :adults, :label => "Pasajeros", collection: 1..5 %>
-    <%= f.input :message %>
+    <%= f.input :adults, :label => "Pasajeros", collection: [ "1", "2", "3", "4", "5", "5+"] %>
+    <%= f.input :message, :label => "Mensaje" %>
   </div>
 
   <div class="form-actions text-center">
